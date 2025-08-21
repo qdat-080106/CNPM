@@ -31,7 +31,7 @@
     │   │   ├── __init__.py
     │   │   ├── ...
     │   │   └── models/ 
-    │   │       └── ...  # Lưu các SQLAlchemy models tại đây
+    │   │       └── ...  
     │   ├── domain/     
     │   │   ├── __init__.py
     │   │   ├── constants.py
