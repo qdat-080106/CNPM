@@ -27,7 +27,7 @@
     │   │   ├── middleware.py
     │   │   ├── responses.py
     │   │   └── requests.py
-    │   ├── infrastructure/
+    │   ├── infrastructure/     # Data layer (ORM + Repository + external services)
     │   │   ├── __init__.py
     │   │   ├── databases/
     │   │   │   ├── __init__.py
@@ -38,7 +38,7 @@
     │   │   │   ├── dentist_model.py
     │   │   │   ├── todo_model.py
     │   │   │   └── user_model.py
-    │   │   ├── repositories/
+    │   │   ├── repositories/  # Repository: CRUD DB, map Domain ↔ ORM
     │   │   │   ├── __init__.py
     │   │   │   ├── appointment_repository.py
     │   │   │   ├── chat_repository.py
@@ -48,11 +48,11 @@
     │   │   │   └── todo_repository.py
     │   │   └── models/ 
     │   │       └── ...  # Lưu các SQLAlchemy models tại đây
-    │   ├── domain/
+    │   ├── domain/     # Core Domain (Entities, VO, Domain rules)
     │   │   ├── __init__.py
     │   │   ├── constants.py
     │   │   ├── exceptions.py
-    │   │   └── models/
+    │   │   └── models/     # (Optional) nơi lưu models khác (nếu cần)
     │   │       ├── __init__.py
     │   │       ├── appointment.py
     │   │       ├── clinic.py
@@ -62,7 +62,7 @@
     │   │       ├── service.py
     │   │       ├── todo.py
     │   │       └── user.py
-    │   ├── services/
+    │   ├── services/    # Application layer (use-cases)
     │   │   ├── __init__.py
     │   │   ├── appointment_service.py
     │   │   ├── auth_service.py
