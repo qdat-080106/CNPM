@@ -54,14 +54,7 @@
     │   │   ├── exceptions.py
     │   │   └── models/     # (Optional) nơi lưu models khác (nếu cần)
     │   │       ├── __init__.py
-    │   │       ├── appointment.py
-    │   │       ├── clinic.py
-    │   │       ├── conversation.py
-    │   │       ├── dentist.py
-    │   │       ├── message.py
-    │   │       ├── service.py
-    │   │       ├── todo.py
-    │   │       └── user.py
+    │   │       ├── ...
     │   ├── services/    # Application layer (use-cases)
     │   │   ├── __init__.py
     │   │   ├── appointment_service.py
@@ -76,5 +69,21 @@
     │   ├── dependency_container.py
     │   ├── error_handler.py
     │   └── logging.py
-            
-
+```
+# Domain Layer 
+```
+ domain/     
+   │   ├── __init__.py
+   │   ├── constants.py
+   │   ├── exceptions.py
+   │   └── models/     
+   │       ├── __init__.py
+   │       ├── appointment.py
+   │       ├── clinic.py
+   │       ├── conversation.py
+   │       ├── dentist.py
+   │       ├── message.py
+   │       ├── service.py
+   │       ├── todo.py
+   │       └── user.py
+```
