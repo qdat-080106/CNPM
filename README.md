@@ -29,23 +29,7 @@
     │   │   └── requests.py
     │   ├── infrastructure/   
     │   │   ├── __init__.py
-    │   │   ├── databases/
-    │   │   │   ├── __init__.py
-    │   │   │   ├── appointment_model.py
-    │   │   │   ├── base.py
-    │   │   │   ├── chat_model.py
-    │   │   │   ├── clinic_model.py
-    │   │   │   ├── dentist_model.py
-    │   │   │   ├── todo_model.py
-    │   │   │   └── user_model.py
-    │   │   ├── repositories/  
-    │   │   │   ├── __init__.py
-    │   │   │   ├── appointment_repository.py
-    │   │   │   ├── chat_repository.py
-    │   │   │   ├── clinic_repository.py
-    │   │   │   ├── dentist_repository.py
-    │   │   │   ├── itodo_repository.py
-    │   │   │   └── todo_repository.py
+    │   │   ├── ...
     │   │   └── models/ 
     │   │       └── ...  # Lưu các SQLAlchemy models tại đây
     │   ├── domain/     
@@ -57,11 +41,7 @@
     │   │       ├── ...
     │   ├── services/    
     │   │   ├── __init__.py
-    │   │   ├── appointment_service.py
-    │   │   ├── auth_service.py
-    │   │   ├── chat_service.py
-    │   │   ├── clinic_service.py
-    │   │   └── todo_service.py
+    │   │   ├── ...
     │   ├── app.py
     │   ├── config.py
     │   ├── cors.py
@@ -122,4 +102,5 @@ src/
     │   ├── chat_repository.py
     │   └── todo_repository.py
     └── models/                                  
-        └── ...                                    # Dùng khi cần mapping tách biệt
+        └── ...                                   
+```
